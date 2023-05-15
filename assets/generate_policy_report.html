@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Dentalligence</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Dentalligence" />
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link href="/assets/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Dentalligence</h1>
+      <nav id="navbar">
+        <ul>
+          <li class="nav-link">Administrator</li>
+          <li class="nav-link">User Setup</li>
+          <li class="nav-link active">Issue Policy</li>
+          <li class="nav-link">See Policies</li>
+          <li class="nav-link">Report</li>
+        </ul>
+        <button class="btn btn-secondary">Sign out</button>
+        
+      </nav>
+      <button id="nav-toggle" class="btn">NAV</button>
+    </header>
+    <div class="header-margin"></div>
+    <div class="app-main__inner">
+
+      <div class="app-inner-layout app-inner-layout-page">
+        <div class="app-inner-layout__wrapper">
+          <div class="app-inner-layout__content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="main-card mb-3 card">
+                    <div class="card-body">
+                      <!-- ====================================== card body ========================================= -->
+                      <!-- ========================================================================================== -->
+                      <!-- ========================================================================================== -->
+                      
+                      <form action="submit" id="assign-resource-form" class="">
+                        <div class="form-row p-4 mx-2 mb-0 mt-2">
+                          <div class="col-md-6">
+                            <div class="position-relative form-group">
+                              <label for="task_type" class="">Type</label
+                              ><select
+                                name="task_type"
+                                id="task_type"
+                                type="text"
+                                class="form-control">
+                                <option value="project1">project1</option>
+                                <option value="job1">job</option>
+                                <option value="SLA1">SLA</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="position-relative form-group">
+                              <label for="task_client" class="">Client</label
+                              ><select
+                                name="task_client"
+                                id="task_client"
+                                type="text"
+                                class="form-control">
+                                <option value="client1">client1</option>
+                                <option value="client2">client2</option>
+                                <option value="client3">client3</option>
+                                <option value="client4">client4</option>
+                                <option value="happening">happening</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="position-relative form-group">
+                              <label for="task_decription" class=""
+                                >Description</label
+                              ><select
+                                name="task_decription"
+                                id="task_decription"
+                                type="text"
+                                class="form-control">
+                                <option value=" description1">
+                                  description1
+                                </option>
+                                <option value=" description2">
+                                  description2
+                                </option>
+                                <option value=" description3">
+                                  description3
+                                </option>
+                                <option value=" description4">
+                                  description4
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="position-relative form-group">
+                              <label for="pm_email" class=""
+                                >Project Manager</label
+                              ><select
+                                name="pm_email"
+                                id="pm_email"
+                                type="text"
+                                class="form-control">
+                                <option value="">1PM@gmail.com</option>
+                                <option value="">2PM@gmail.com</option>
+                                <option value="">3PM@gmail.com</option>
+                                <option value="">4PM@gmail.com</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 mx-4 border rounded task-detail-form mb-4">
+                          <div class="">
+                            <div id="new-resource-input1" class="col-md-12">
+                              <div class="position-relative form-group">
+                                <label for="res_email1" class=""
+                                  >1 - Resource</label
+                                ><select
+                                  name="res_email1"
+                                  id="res_email1"
+                                  type="text"
+                                  class="form-control">
+                                  <option value="">
+                                    1resourceEmail1jbs.live
+                                  </option>
+                                  <option value="">
+                                    2resourceEmail2jbs.live
+                                  </option>
+                                  <option value="">
+                                    3resourceEmail3jbs.live
+                                  </option>
+                                  <option value="">
+                                    4resourceEmail4jbs.live
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="">
+                            <button
+                              id="add-new-resource-btn"
+                              type="button"
+                              class="add-task btn btn-secondary btn-hover-shine btn-shadow ml-3 btn-wide-2x"
+                              onclick="add_new_resource()">
+                              Add New
+                            </button>
+                          </div>
+                        </div>
+                        <div class="p-4 mx-4 border rounded task-detail-form mb-4">
+                          <div class="">
+                            <div id="new-resource-input1" class="col-md-12">
+                              <div class="position-relative form-group">
+                                <label for="res_email1" class=""
+                                  >1 - Resource</label
+                                ><select
+                                  name="res_email1"
+                                  id="res_email1"
+                                  type="text"
+                                  class="form-control">
+                                  <option value="">
+                                    1resourceEmail1jbs.live
+                                  </option>
+                                  <option value="">
+                                    2resourceEmail2jbs.live
+                                  </option>
+                                  <option value="">
+                                    3resourceEmail3jbs.live
+                                  </option>
+                                  <option value="">
+                                    4resourceEmail4jbs.live
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="">
+                            <button
+                              id="add-new-resource-btn"
+                              type="button"
+                              class="add-task btn btn-secondary btn-hover-shine btn-shadow ml-3 btn-wide-2x"
+                              onclick="add_new_resource()">
+                              Add New
+                            </button>
+                          </div>
+                        </div>
+                        <div class="p-4 mx-4 border rounded task-detail-form mb-4">
+                          <div class="">
+                            <div id="new-resource-input1" class="col-md-12">
+                              <div class="position-relative form-group">
+                                <label for="res_email1" class=""
+                                  >1 - Resource</label
+                                ><select
+                                  name="res_email1"
+                                  id="res_email1"
+                                  type="text"
+                                  class="form-control">
+                                  <option value="">
+                                    1resourceEmail1jbs.live
+                                  </option>
+                                  <option value="">
+                                    2resourceEmail2jbs.live
+                                  </option>
+                                  <option value="">
+                                    3resourceEmail3jbs.live
+                                  </option>
+                                  <option value="">
+                                    4resourceEmail4jbs.live
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="">
+                            <button
+                              id="add-new-resource-btn"
+                              type="button"
+                              class="add-task btn btn-secondary btn-hover-shine btn-shadow ml-3 btn-wide-2x"
+                              onclick="add_new_resource()">
+                              Add New
+                            </button>
+                          </div>
+                        </div>
+
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-shadow btn-wide-2x btn-hover-shine float-right btn-wide-2x m-4">
+                          Save
+                        </button>
+                      </form>
+                    </div>
+
+                    <!-- ========================================================================================== -->
+                    <!-- ========================================================================================== -->
+                    <!-- ====================================== card body ========================================= -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
