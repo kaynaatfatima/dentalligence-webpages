@@ -24529,7 +24529,6 @@ header{
   padding-right: 3rem;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
-
 }
 header nav{
   display: flex;
@@ -24562,8 +24561,26 @@ header nav ul li.active{
 header #nav-toggle{
   display: none;
 }
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 980px) {
+  footer{
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 1160px) {
+
   header nav{
     position: fixed;
     top:0;
@@ -24598,4 +24615,7 @@ header #nav-toggle{
 }
 .header-margin{
   padding-top:80px;
+}
+.header-logo{
+  object-fit: contain;
 }
