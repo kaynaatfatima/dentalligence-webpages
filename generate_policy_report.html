@@ -20,7 +20,7 @@
   </head>
   <body>
     <header>
-      <img src="/assets/images/logo.png" class="header-logo" alt="">
+      <img src="/assets/images/logo.png" class="header-logo" alt="" />
       <nav id="navbar">
         <ul>
           <li class="nav-link">Administrator</li>
@@ -30,13 +30,11 @@
           <li class="nav-link">Report</li>
         </ul>
         <button class="btn btn-secondary">Sign out</button>
-        
       </nav>
-      <button id="nav-toggle" class="btn">NAV</button>
+      <button id="nav-toggle" class="btn">🏛️</button>
     </header>
     <div class="header-margin"></div>
     <div class="app-main__inner">
-
       <div class="app-inner-layout app-inner-layout-page">
         <div class="app-inner-layout__wrapper">
           <div class="app-inner-layout__content">
@@ -44,208 +42,85 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="main-card mb-3 card">
-                    <div class="card-body">
-                      <!-- ====================================== card body ========================================= -->
-                      <!-- ========================================================================================== -->
-                      <!-- ========================================================================================== -->
-                      
-                      <form action="submit" id="assign-resource-form" class="">
-                        <div class="form-row p-4 mx-2 mb-0 mt-2">
-                          <div class="col-md-6">
-                            <div class="position-relative form-group">
-                              <label for="task_type" class="">Type</label
-                              ><select
-                                name="task_type"
-                                id="task_type"
-                                type="text"
-                                class="form-control">
-                                <option value="project1">project1</option>
-                                <option value="job1">job</option>
-                                <option value="SLA1">SLA</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="position-relative form-group">
-                              <label for="task_client" class="">Client</label
-                              ><select
-                                name="task_client"
-                                id="task_client"
-                                type="text"
-                                class="form-control">
-                                <option value="client1">client1</option>
-                                <option value="client2">client2</option>
-                                <option value="client3">client3</option>
-                                <option value="client4">client4</option>
-                                <option value="happening">happening</option>
-                              </select>
-                            </div>
-                          </div>
-
-                          <div class="col-md-6">
-                            <div class="position-relative form-group">
-                              <label for="task_decription" class=""
-                                >Description</label
-                              ><select
-                                name="task_decription"
-                                id="task_decription"
-                                type="text"
-                                class="form-control">
-                                <option value=" description1">
-                                  description1
-                                </option>
-                                <option value=" description2">
-                                  description2
-                                </option>
-                                <option value=" description3">
-                                  description3
-                                </option>
-                                <option value=" description4">
-                                  description4
-                                </option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="position-relative form-group">
-                              <label for="pm_email" class=""
-                                >Project Manager</label
-                              ><select
-                                name="pm_email"
-                                id="pm_email"
-                                type="text"
-                                class="form-control">
-                                <option value="">1PM@gmail.com</option>
-                                <option value="">2PM@gmail.com</option>
-                                <option value="">3PM@gmail.com</option>
-                                <option value="">4PM@gmail.com</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="p-4 mx-4 border rounded task-detail-form mb-4">
-                          <div class="">
-                            <div id="new-resource-input1" class="col-md-12">
-                              <div class="position-relative form-group">
-                                <label for="res_email1" class=""
-                                  >1 - Resource</label
-                                ><select
-                                  name="res_email1"
-                                  id="res_email1"
-                                  type="text"
-                                  class="form-control">
-                                  <option value="">
-                                    1resourceEmail1jbs.live
-                                  </option>
-                                  <option value="">
-                                    2resourceEmail2jbs.live
-                                  </option>
-                                  <option value="">
-                                    3resourceEmail3jbs.live
-                                  </option>
-                                  <option value="">
-                                    4resourceEmail4jbs.live
-                                  </option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="">
-                            <button
-                              id="add-new-resource-btn"
-                              type="button"
-                              class="add-task btn btn-secondary btn-hover-shine btn-shadow ml-3 btn-wide-2x"
-                              onclick="add_new_resource()">
-                              Add New
-                            </button>
-                          </div>
-                        </div>
-                        <div class="p-4 mx-4 border rounded task-detail-form mb-4">
-                          <div class="">
-                            <div id="new-resource-input1" class="col-md-12">
-                              <div class="position-relative form-group">
-                                <label for="res_email1" class=""
-                                  >1 - Resource</label
-                                ><select
-                                  name="res_email1"
-                                  id="res_email1"
-                                  type="text"
-                                  class="form-control">
-                                  <option value="">
-                                    1resourceEmail1jbs.live
-                                  </option>
-                                  <option value="">
-                                    2resourceEmail2jbs.live
-                                  </option>
-                                  <option value="">
-                                    3resourceEmail3jbs.live
-                                  </option>
-                                  <option value="">
-                                    4resourceEmail4jbs.live
-                                  </option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="">
-                            <button
-                              id="add-new-resource-btn"
-                              type="button"
-                              class="add-task btn btn-secondary btn-hover-shine btn-shadow ml-3 btn-wide-2x"
-                              onclick="add_new_resource()">
-                              Add New
-                            </button>
-                          </div>
-                        </div>
-                        <div class="p-4 mx-4 border rounded task-detail-form mb-4">
-                          <div class="">
-                            <div id="new-resource-input1" class="col-md-12">
-                              <div class="position-relative form-group">
-                                <label for="res_email1" class=""
-                                  >1 - Resource</label
-                                ><select
-                                  name="res_email1"
-                                  id="res_email1"
-                                  type="text"
-                                  class="form-control">
-                                  <option value="">
-                                    1resourceEmail1jbs.live
-                                  </option>
-                                  <option value="">
-                                    2resourceEmail2jbs.live
-                                  </option>
-                                  <option value="">
-                                    3resourceEmail3jbs.live
-                                  </option>
-                                  <option value="">
-                                    4resourceEmail4jbs.live
-                                  </option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="">
-                            <button
-                              id="add-new-resource-btn"
-                              type="button"
-                              class="add-task btn btn-secondary btn-hover-shine btn-shadow ml-3 btn-wide-2x"
-                              onclick="add_new_resource()">
-                              Add New
-                            </button>
-                          </div>
-                        </div>
-
-                        <button
-                          type="submit"
-                          class="btn btn-primary btn-shadow btn-wide-2x btn-hover-shine float-right btn-wide-2x m-4">
-                          Save
-                        </button>
-                      </form>
-                    </div>
-
-                    <!-- ========================================================================================== -->
                     <!-- ========================================================================================== -->
                     <!-- ====================================== card body ========================================= -->
+                    <!-- ========================================================================================== -->
+                    <div class="card-title">Generate Policy Report</div>
+                    <div class="card-body">
+                      <form action="" class="">
+                        <div class="form-row justify-content-center">
+                          <div class="col-md-4">
+                            <div class="position-relative form-group">
+                              <label for="from_date" class="">From Date</label
+                              ><input
+                                type="date"
+                                name=""
+                                id="from_date"
+                                class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="position-relative form-group">
+                              <label for="from_date" class="">To Date</label
+                              ><input
+                                type="date"
+                                name=""
+                                id="from_date"
+                                class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                          <div class="col-md-4">
+                            <div class="position-relative form-group">
+                              <label for="from_date" class=""
+                                >Policy status</label
+                              ><input
+                                type="text"
+                                name=""
+                                placeholder=""
+                                id="from_date"
+                                class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="position-relative form-group">
+                              <label for="from_date" class="">Plan Type</label
+                              ><input
+                                type="text"
+                                name=""
+                                id="from_date"
+                                class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                          <div class="col-md-8">
+                            <div class="position-relative form-group">
+                              <label for="from_date" class=""
+                                >Payment Mode</label
+                              ><input
+                                type="text"
+                                name=""
+                                id="from_date"
+                                class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                          <div class="col-md-8">
+                            <button
+                              type="submit"
+                              class="btn btn-primary btn-shadow btn-hover-shine w-100 mt-4">
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- ========================================================================================== -->
+                    <!-- ====================================== card body ========================================= -->
+                    <!-- ========================================================================================== -->
                   </div>
                 </div>
               </div>
@@ -255,7 +130,9 @@
       </div>
     </div>
     <footer>
-      <img src="/assets/images/Dent_insurance_client.png" alt="dent insurance client logo">
+      <img
+        src="/assets/images/Dent_insurance_client.png"
+        alt="dent insurance client logo" />
       <p>Empowering innovative affordable solurions using technology</p>
       <p>+9714 600546669</p>
     </footer>
