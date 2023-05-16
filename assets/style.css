@@ -2193,12 +2193,12 @@ fieldset:disabled a.btn {
 }
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
+  background-color: rgba(62, 179, 249, 0.8);
+  border-color:  rgba(62, 179, 249, 0.8);
 }
 .btn-secondary:focus,
 .btn-secondary.focus {
-  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0.5);
+  box-shadow: 0 0 0 0 rgba(62, 179, 249, 0.8);
 }
 .btn-secondary.disabled,
 .btn-secondary:disabled {
@@ -2210,13 +2210,13 @@ fieldset:disabled a.btn {
 .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #545b62;
-  border-color: #4e555b;
+  background-color: rgba(62, 179, 249, 0.8);
+  border-color: rgba(62, 179, 249, 0.7);
 }
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0.5);
+  box-shadow: 0 0 0 0 rgba(62, 179, 249, 0.8);
 }
 .btn-success {
   color: #fff;
@@ -13459,12 +13459,12 @@ body {
 }
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
+  background-color: rgba(62, 179, 249, 0.8);
+  border-color: rgba(62, 179, 249, 0.8);
 }
 .btn-secondary:focus,
 .btn-secondary.focus {
-  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0.5);
+  box-shadow: 0 0 0 0 rgba(62, 179, 249, 0.8);
 }
 .btn-secondary.disabled,
 .btn-secondary:disabled {
@@ -13476,8 +13476,8 @@ body {
 .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #545b62;
-  border-color: #4e555b;
+  background-color: rgba(62, 179, 249, 0.8);
+  border-color: rgba(62, 179, 249, 0.8);
 }
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-secondary:not(:disabled):not(.disabled).active:focus,
@@ -24621,4 +24621,13 @@ footer{
 }
 .header-logo{
   object-fit: contain;
+}
+.border-bottom-rounded{
+  border: 3px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.btn-primary-outlined{
+  border: 2px solid rgb(17, 71, 141);
+  color: rgb(17, 71, 141);
 }
