@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Dentalligence</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <meta name="description" content="Dentalligence" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <link href="/assets/style.css" rel="stylesheet" />
+  <link href="/assets/font_awesome/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img src="/assets/images/logo.png" class="header-logo" alt="" />
+    <nav id="navbar">
+      <ul>
+        <li class="nav-link active">Administrator</li>
+        <li class="nav-link">User Setup</li>
+        <li class="nav-link">Issue Policy</li>
+        <li class="nav-link">See Policies</li>
+        <li class="nav-link">Report</li>
+      </ul>
+      <button class="btn">
+        <i class="fa fa-solid fa-right-from-bracket mr-1 fa-lg"></i> <b>Sign out</b>
+      </button>
+    </nav>
+    <button id="nav-toggle" class="btn">
+      <i class="fa fa-solid fa-bars fa-xl"></i>
+    </button>
+  </header>
+  <div class="header-margin"></div>
+  <div class="app-main__inner">
+    <div class="app-inner-layout app-inner-layout-page">
+      <div class="app-inner-layout__wrapper">
+        <div class="app-inner-layout__content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="main-card mb-3 card">
+                  <!-- ========================================================================================== -->
+                  <!-- ====================================== card body ========================================= -->
+                  <!-- ========================================================================================== -->
+                  <section class="policy-div">
+                    <div class="policy-form">
+                      <h1><b>Search Policy. </b></h1>
+                      <form>
+                        <div class="input-block">
+                          <label htmlFor="emId" class="input-label">
+                            Empirates ID
+                          </label>
+                          <br />
+                          <input type="EmId" autoComplete="off" name="EmId" id="EmId" placeholder="Emirates ID" />
+                        </div>
+                        <div class="input-block">
+                          <label htmlFor="policyNum" class="input-label">
+                            Policy Number
+                          </label>
+                          <br />
+                          <input type="policyNum" autoComplete="off" name="policyNum" id="policyNum"
+                            placeholder="Policy Num" />
+                        </div>
+                        <div class="input-block">
+                          <label htmlFor="fname" class="input-label">
+                            First Name
+                          </label>
+                          <br />
+                          <input type="fname" autoComplete="off" name="fname" id="fname" placeholder="First Name" />
+                        </div>
+                        <div class="input-block">
+                          <label htmlFor="lname" class="input-label">
+                            Last Name
+                          </label>
+                          <br />
+                          <input type="lname" autoComplete="off" name="lname" id="lname" placeholder="Last Name" />
+                        </div>
+                        <Button variant="primary" class="search-btn">Search</Button>
+                      </form>
+                    </div>
+                    <div class="policy-img">
+                      <img alt="" src="/assets/images/tooth.png" />
+                    </div>
+                  </section>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                        <div class="dataTables_length" id="example_length"><label>Show <select name="example_length"
+                              aria-controls="example"
+                              class="custom-select custom-select-sm form-control form-control-sm">
+                              <option value="10">10</option>
+                              <option value="25">25</option>
+                              <option value="50">50</option>
+                              <option value="100">100</option>
+                            </select> entries</label></div>
+                      </div>
+                    </div>
+                    <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
+                      <thead>
+                        <tr role="row">
+                          <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                            style="width: 96.4px;" aria-sort="ascending"
+                            aria-label="Name: activate to sort column descending">Policy#</th>
+                          <th>Name</th>
+                          <th>Phone</th>
+                          <th>Email</th>
+                          <th>Registration Date</th>
+                          <th>Status</th>
+                          <th>Expiry Date</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>pl_0f192662_f6b</td>
+                          <td>Avengers Marvel</td>
+                          <td>03216382719</td>
+                          <td>Jamalhashmi@yahoo.com</td>
+                          <td>02-Mar-2023</td>
+                          <td>Activated</td>
+                          <td>04-Mar-2024</td>
+                          <td><i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>pl_0f192662_f6b</td>
+                          <td>Avengers Marvel</td>
+                          <td>03216382719</td>
+                          <td>Jamalhashmi@yahoo.com</td>
+                          <td>02-Mar-2023</td>
+                          <td>Activated</td>
+                          <td>04-Mar-2024</td>
+                          <td><i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>pl_0f192662_f6b</td>
+                          <td>Avengers Marvel</td>
+                          <td>03216382719</td>
+                          <td>Jamalhashmi@yahoo.com</td>
+                          <td>02-Mar-2023</td>
+                          <td>Activated</td>
+                          <td>04-Mar-2024</td>
+                          <td><i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>pl_0f192662_f6b</td>
+                          <td>Avengers Marvel</td>
+                          <td>03216382719</td>
+                          <td>Jamalhashmi@yahoo.com</td>
+                          <td>02-Mar-2023</td>
+                          <td>Activated</td>
+                          <td>04-Mar-2024</td>
+                          <td><i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>pl_0f192662_f6b</td>
+                          <td>Avengers Marvel</td>
+                          <td>03216382719</td>
+                          <td>Jamalhashmi@yahoo.com</td>
+                          <td>02-Mar-2023</td>
+                          <td>Activated</td>
+                          <td>04-Mar-2024</td>
+                          <td><i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>pl_0f192662_f6b</td>
+                          <td>Avengers Marvel</td>
+                          <td>03216382719</td>
+                          <td>Jamalhashmi@yahoo.com</td>
+                          <td>02-Mar-2023</td>
+                          <td>Activated</td>
+                          <td>04-Mar-2024</td>
+                          <td><i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>pl_0f192662_f6b</td>
+                          <td>Avengers Marvel</td>
+                          <td>03216382719</td>
+                          <td>Jamalhashmi@yahoo.com</td>
+                          <td>02-Mar-2023</td>
+                          <td>Activated</td>
+                          <td>04-Mar-2024</td>
+                          <td><i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>pl_0f192662_f6b</td>
+                          <td>Avengers Marvel</td>
+                          <td>03216382719</td>
+                          <td>Jamalhashmi@yahoo.com</td>
+                          <td>02-Mar-2023</td>
+                          <td>Activated</td>
+                          <td>04-Mar-2024</td>
+                          <td><i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>pl_0f192662_f6b</td>
+                          <td>Avengers Marvel</td>
+                          <td>03216382719</td>
+                          <td>Jamalhashmi@yahoo.com</td>
+                          <td>02-Mar-2023</td>
+                          <td>Activated</td>
+                          <td>04-Mar-2024</td>
+                          <td><i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 10 of
+                        57 entries</div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div class="dataTables_paginate paging_simple_numbers" id="example_paginate">
+                        <ul class="pagination">
+                          <li class="paginate_button page-item previous disabled" id="example_previous"><a href="#"
+                              aria-controls="example" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                          <li class="paginate_button page-item active"><a href="#" aria-controls="example"
+                              data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="2"
+                              tabindex="0" class="page-link">2</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="3"
+                              tabindex="0" class="page-link">3</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="4"
+                              tabindex="0" class="page-link">4</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="5"
+                              tabindex="0" class="page-link">5</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="6"
+                              tabindex="0" class="page-link">6</a></li>
+                          <li class="paginate_button page-item next" id="example_next"><a href="#"
+                              aria-controls="example" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ========================================================================================== -->
+                  <!-- ====================================== card body ========================================= -->
+                  <!-- ========================================================================================== -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <img src="/assets/images/Dent_insurance_client.png" alt="dent insurance client logo" />
+    <p>Empowering innovative affordable solurions using technology</p>
+    <p>+9714 600546669</p>
+  </footer>
+  <script src="/assets/script.js"></script>
+</body>
+
+</html>

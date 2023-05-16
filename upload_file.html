@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Dentalligence</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Dentalligence" />
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link href="/assets/style.css" rel="stylesheet" />
+    <link href="/assets/font_awesome/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img src="/assets/images/logo.png" class="header-logo" alt="" />
+      <nav id="navbar">
+        <ul>
+          <li class="nav-link">Administrator</li>
+          <li class="nav-link active">User Setup</li>
+          <li class="nav-link">Issue Policy</li>
+          <li class="nav-link">See Policies</li>
+          <li class="nav-link">Report</li>
+        </ul>
+        <button class="btn">
+          <i class="fa fa-solid fa-right-from-bracket mr-1 fa-lg"></i> <b>Sign out</b>
+        </button>
+      </nav>
+      <button id="nav-toggle" class="btn">
+        <i class="fa fa-solid fa-bars fa-xl"></i>
+      </button>
+    </header>
+    <div class="header-margin"></div>
+    <div class="app-main__inner">
+      <div class="app-inner-layout app-inner-layout-page">
+        <div class="app-inner-layout__wrapper">
+          <div class="app-inner-layout__content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="main-card mb-3 card">
+                    <!-- ========================================================================================== -->
+                    <!-- ====================================== card body ========================================= -->
+                    <!-- ========================================================================================== -->
+                    <div class="policy_page">
+
+                      <div class="policy_heading">
+                        <h3><b> Upload Bulk File </b></h3>
+                        <input type="file" name="file" onChange={changeHandler}>
+                      </div>
+            
+                      <div class="container_box">
+                          <form>
+                          <div class="formUpload">
+                            <label for="row">Row #</label>
+                            <input type="text" id="row" name="row" required>
+                          </div>
+                          <div class="formUpload">
+                              <label for="membertype">Member Type</label>
+                              <input type="text" id="membertype" name="membertype" required>
+                          </div>
+                          <div class="formUpload">
+                              <label for="fname">First Name</label>
+                              <input type="text" id="fname" name="fname" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="lname">Last Name</label>
+                              <input type="text" id="lname" name="lname" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="dob">DOB</label>
+                              <input type="text" id="dob" name="dob" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="empId">Employee ID</label>
+                              <input type="text" id="empId" name="empId" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="emirateId">Emirates ID</label>
+                              <input type="text" id="emirateId" name="emirateId" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="passportNum">Passport #</label>
+                              <input type="text" id="passportNum" name="passportNum" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="phone">Phone #</label>
+                              <input type="text" id="phone" name="phone" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="email">Email</label>
+                              <input type="text" id="email" name="email" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="gender">Gender</label>
+                              <input type="text" id="gender" name="gender" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="nationality">Nationality</label>
+                              <input type="text" id="nationality" name="nationality" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="maritialStatus">Maritial Status</label>
+                              <input type="text" id="maritialStatus" name="maritialStatus" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="emirate">Emirates</label>
+                              <input type="text" id="emirate" name="emirate" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="palnCode">Plan Code</label>
+                              <input type="text" id="planCode" name="planCode" required >
+                          </div>
+                          <div class="formUpload">
+                              <label for="planPremium">Plan Premium Vlaue (AED)</label>
+                              <input type="text" id="planPremium" name="planPremium" required >
+                          </div>
+              
+                              
+              
+                          </form>
+                      </div>
+                    </div>
+                    <!-- ========================================================================================== -->
+                    <!-- ====================================== card body ========================================= -->
+                    <!-- ========================================================================================== -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <section class="div-footer">
+        <img
+          src="/assets/images/Dent_insurance_client.png"
+          alt="dent insurance client logo" />
+        <p>Empowering innovative affordable solurions using technology</p>
+        <p>+9714 600546669</p>
+      </section>
+    </footer>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
