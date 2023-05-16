@@ -31,7 +31,7 @@ html {
   border-color: rgb(17, 71, 141);
 }
 .border-secondary {
-  border-color: rgb(62, 179, 249);
+  border-color: rgb(91, 192, 251);
 }
 .border-success {
   border-color: #4c9e20;
@@ -1895,7 +1895,7 @@ pre code {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .form-control::placeholder {
-  color: rgb(62, 179, 249);
+  color: rgb(161, 161, 161);
   opacity: 0.35;
 }
 .form-control:disabled,
@@ -8619,7 +8619,7 @@ button.bg-alternate:focus {
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #b33c25 !important;
+  color: rgb(62, 179, 249) !important;
 }
 .text-secondary {
   color: rgb(62, 179, 249) !important;
@@ -17937,7 +17937,11 @@ legend {
 .app-logo {
   background: url(./assets/images/jbsLogo.png) 50% 50% no-repeat;
   object-fit: cover;
-  height: 3rem;
+  height: 3.5rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .app-logo-inverse {
   background: url(./assets/images/logo-inverse.png) 50% 50% no-repeat;
@@ -24630,4 +24634,12 @@ footer{
 .btn-primary-outlined{
   border: 2px solid rgb(17, 71, 141);
   color: rgb(17, 71, 141);
+}
+.bg-primary-gradient{
+  background: linear-gradient(
+    180deg,
+    rgba(91, 192, 251, 0.7) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
 }
