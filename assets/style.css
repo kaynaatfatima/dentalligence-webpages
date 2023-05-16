@@ -24623,7 +24623,7 @@ footer{
   object-fit: contain;
 }
 .border-bottom-rounded{
-  border: 3px;
+  border: 2px solid rgb(62, 179, 249) !important;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
