@@ -9,7 +9,7 @@
     <title>Dentalligence</title>
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="Dentalligence" />
     <link rel="icon" href="favicon.ico" />
 
@@ -51,37 +51,34 @@
                     <!-- ====================================== card body ========================================= -->
                     <!-- ========================================================================================== -->
                     <div class="user_list">
-                      <button class="user_btn"><i class="fa-solid fa-plus"></i> Create a New User</button>
-        <div class='user_container'>
-                      <table id="example"
-                          class="table table-hover table-striped table-bordered">
-                          <thead>
-                              <tr>
-                                  <th>Name Of User</th>
-                                  <th>Login ID</th>
-                                  <th>Password</th>
-                                  <th>Status</th>
-                                  <th>Action</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <td>Administartion</td>
-                                  <td>dentalligence.admin@ztrategize.com</td>
-                                  <td>.......</td>
-                                  <td>Active</td>
-                                  <td><i class="fa-solid fa-lock"></i>Change Password</td>
-                              </tr>
-                              <tr>
-                                <td>Administartion</td>
-                                <td>jamalhashmi@yahoo.com</td>
-                                <td>.......</td>
-                                <td>Active</td>
-                                <td><i class="fa-solid fa-lock"></i>Change Password</td>
-                              </tr>
-                          </tbody>
+                      <button class="user_btn btn-light"><i class="fa-solid fa-plus"></i> Create a New User</button>
+                      <table class="tables table-hovers table-striped table-bordered">
+                        <thead class="">
+                          <tr role="row" class="table-color-primary">
+                            <th scope="col">Name Of User</th>
+                            <th scope="col">Login ID</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Name Of User">Administartion</td>
+                            <td data-label="Login ID">dentalligence.admin@ztrategize.com</td>
+                            <td data-label="Passwaord">.......</td>
+                            <td data-label="Status">Active</td>
+                            <td data-label="Action"><i class="fa-solid fa-lock"></i>Change Password</td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Name Of User">Administartion</td>
+                            <td data-label="Login ID">jamalhashmi@yahoo.com</td>
+                            <td data-label="Password">.......</td>
+                            <td data-label="Status">Active</td>
+                            <td data-label="Action"><i class="fa-solid fa-lock"></i>Change Password</td>
+                          </tr>
+                        </tbody>
                       </table>
-                    </div>
                   </div>
                     <!-- ========================================================================================== -->
                     <!-- ====================================== card body ========================================= -->
