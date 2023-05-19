@@ -22,23 +22,25 @@
 
   <body>
     <header class="index-header">
-      <a href="#" class="logo">
-        <img alt="" src="/assets/images/logo.png" />
-      </a>
-
-      <nav>
+      <img src="/assets/images/logo.png" class="header-logo" alt="" />
+      <nav id="navbar">
         <ul class="menu">
           <li class="nav-link">Home</li>
           <li class="nav-link">About us</li>
           <li class="nav-link">Our Partners</li>
           <li class="nav-link">Contact us</li>
         </ul>
-        <button class="nav-btn btn"><b> PARTNER LOGIN </b></button>
+        <button class="btn nav-btn">
+          <b>Partner login</b>
+        </button>
       </nav>
+      <button id="nav-toggle" class="btn">
+        <i class="fa fa-solid fa-bars fa-xl"></i>
+      </button>
     </header>
     <div class="index-header-margin"></div>
     <section class="main">
-      <div class="main-heading text-white col-md-6">
+      <div class="main-heading text-white col-lg-5 mx-4 mx-lg-0">
         <h1 class="py-3 text-primary">
           <b
             >Dentalligence enables dentist to offer <br />'Dental Insurance'<br />
@@ -50,9 +52,9 @@
           evidential record & validation to issue 'insurance' with higher than
           conventional dental coverages.
         </p>
-        <button href="#" class="btn btn-success btn-hover-shine btn-xl"
-          ><b>Go To My Dental Insurance</b></
-        >
+        <button href="#" class="btn btn-success btn-hover-shine btn-xl">
+          <b>Go To My Dental Insurance</b>
+        </button>
       </div>
     </section>
     <!-- ABOUT-DIV-1 -->
@@ -65,8 +67,8 @@
           service.
         </p>
         <button href="#" class="btn btn-success btn-hover-shine btn-xl">
-          INDIVIDUAL DENTAL INSURANCE PLANS</
-        >
+          INDIVIDUAL DENTAL INSURANCE PLANS
+        </button>
       </div>
     </section>
     <!-- About Section -->
@@ -110,10 +112,12 @@
     </section>
     <!-- Features -->
     <section class="features">
-        <h1 class="f-heading px-1 text-primary text-center">Europe's leading AI Software in dentistry</h1>
+      <h1 class="f-heading px-1 text-primary text-center">
+        Europe's leading AI Software in dentistry
+      </h1>
       <div class="f-container">
         <div class="row m-4">
-          <div class="card col-md-4 btn-hover-shine ">
+          <div class="card col-md-4 btn-hover-shine">
             <div class="f-box p-4 mb-5 bg-secondary shadow">
               <div class="f-img">
                 <img alt="" src="/assets/images/f-icon-1.png" />
@@ -125,7 +129,7 @@
             </div>
           </div>
 
-          <div class="card col-md-4 btn-hover-shine ">
+          <div class="card col-md-4 btn-hover-shine">
             <div class="f-box p-4 mb-5 bg-primary shadow">
               <div class="f-img">
                 <img alt="" src="/assets/images/f-icon-2.png" />
@@ -137,7 +141,7 @@
             </div>
           </div>
 
-          <div class="card col-md-4 btn-hover-shine ">
+          <div class="card col-md-4 btn-hover-shine">
             <div class="f-box p-4 mb-5 bg-secondary shadow">
               <div class="f-img">
                 <img src="/assets/images/f-icon-3.png" />
@@ -153,7 +157,7 @@
     </section>
     <!-- cover -->
     <section class="img-text">
-        <img alt="" src="/assets/images/dental ligence - 2.png"/>
+      <img alt="" src="/assets/images/dental ligence - 2.png" />
     </section>
     <!-- ABOUT-DIV-1  -->
     <section class="about-div py-4">
@@ -163,12 +167,14 @@
           Contact us and we will connect you ti a trusted partner for you or
           your company to subscribe for Dental Insurance.
         </p>
-        <button href="#" class="btn about-btn"> GO TO MY DENTAL INSURANCE</button>
+        <button href="#" class="btn about-btn">
+          GO TO MY DENTAL INSURANCE
+        </button>
       </div>
     </section>
     <!-- Footer  -->
     <footer class="footer">
-      <div class="footer-content">
+      <div class="footer-content w-100">
         <h3>DENTALLIGENCE</h3>
         <p>Empowering innovative affordable solutions using technology</p>
         <footer class="footer-menu p-0">
@@ -203,5 +209,7 @@
         </div>
       </div>
     </footer>
+    <script src="/assets/script.js"></script>
+
   </body>
 </html>
