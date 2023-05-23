@@ -1,188 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-Language" content="en" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Dentalligence</title>
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-  <meta name="description" content="Dentalligence" />
-  <link rel="icon" href="favicon.ico" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Dentalligence</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Dentalligence" />
+    <link rel="icon" href="favicon.ico" />
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no" />
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
 
-  <link href="/assets/style.css" rel="stylesheet" />
-  <link href="/assets/font_awesome/css/all.min.css" rel="stylesheet" />
-</head>
+    <link href="/assets/style.css" rel="stylesheet" />
+    <link href="/assets/font_awesome/css/all.min.css" rel="stylesheet" />
+  </head>
 
-<body>
-  <header>
-    <img src="/assets/images/logo.png" class="header-logo" alt="" />
-    <nav id="navbar">
-      <ul>
-        <li class="nav-link">Administrator</li>
-        <li class="nav-link">User Setup</li>
-        <li class="nav-link active">Issue Policy</li>
-        <li class="nav-link">See Policies</li>
-        <li class="nav-link">Report</li>
-      </ul>
-      <button class="btn">
-        <i class="fa fa-solid fa-right-from-bracket mr-1 fa-lg"></i> <b>Sign out</b>
+  <body>
+    <header>
+      <img src="/assets/images/logo.png" class="header-logo" alt="" />
+      <nav id="navbar">
+        <ul>
+          <li class="nav-link">Administrator</li>
+          <li class="nav-link">User Setup</li>
+          <li class="nav-link active">Issue Policy</li>
+          <li class="nav-link">See Policies</li>
+          <li class="nav-link">Report</li>
+        </ul>
+        <button class="btn">
+          <i class="fa fa-solid fa-right-from-bracket mr-1 fa-lg"></i>
+          <b>Sign out</b>
+        </button>
+      </nav>
+      <button id="nav-toggle" class="btn">
+        <i class="fa fa-solid fa-bars fa-xl"></i>
       </button>
-    </nav>
-    <button id="nav-toggle" class="btn">
-      <i class="fa fa-solid fa-bars fa-xl"></i>
-    </button>
-  </header>
-  <div class="header-margin"></div>
-  <div class="app-main__inner">
-    <div class="app-inner-layout app-inner-layout-page">
-      <div class="app-inner-layout__wrapper">
-        <div class="app-inner-layout__content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="main-card mb-3 card">
-                  <!-- ========================================================================================== -->
-                  <!-- ====================================== card body ========================================= -->
-                  <!-- ========================================================================================== -->
-                  <section class="row justify-content-center">
-
-                    <div class="h-max-content d-flex col-md-8 col-lg-3 col-sm-8">
-                      <div class="ml-3 w-100 mb-3 shadow p-3 card border text-center border-primary">
-                        <h5 class="text-xl text-primary">Issue New Policy</h5>
-                        <div class="row justify-content-around pt-2">
-                          <button class="btn  nav-link border-primary bg-white text-primary m-2">Single Policy</button>
-                          <button class="btn nav-link border-primary bg-white text-primary m-2">Bulk Upload</button>
+    </header>
+    <div class="header-margin"></div>
+    <div class="app-main__inner">
+      <div class="app-inner-layout app-inner-layout-page">
+        <div class="app-inner-layout__wrapper">
+          <div class="app-inner-layout__content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="main-card mb-3 card">
+                    <!-- ========================================================================================== -->
+                    <!-- ====================================== card body ========================================= -->
+                    <!-- ========================================================================================== -->
+                    <section class="row justify-content-center">
+                      <div
+                        class="h-max-content d-flex col-md-8 col-lg-3 col-sm-8">
+                        <div
+                          class="ml-3 w-100 mb-3 shadow p-3 card border text-center border-primary">
+                          <h5 class="text-xl text-primary">Issue New Policy</h5>
+                          <div class="row justify-content-around pt-2">
+                            <button
+                              class="btn nav-link border-primary bg-white text-primary m-2">
+                              Single Policy
+                            </button>
+                            <button
+                              class="btn nav-link border-primary bg-white text-primary m-2">
+                              Bulk Upload
+                            </button>
+                          </div>
                         </div>
+                      </div>
+
+                      <div class="col-lg-9">
+                        <h3 class="text-xl text-primary text-center">
+                          Policy Holder Information
+                        </h3>
+                        <div class="card-body">
+                          <form class="">
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="emiratesId" class=""
+                                    >Emirates ID</label
+                                  ><input
+                                    name="emiratesId"
+                                    id="emiratesId"
+                                    type="text"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="passport" class="">Passport</label
+                                  ><input
+                                    name="passport"
+                                    id="passport"
+                                    type="passport"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="fname" class=""
+                                    >Member First Name</label
+                                  ><input
+                                    name="fname"
+                                    id="fname"
+                                    type="text"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="lname" class=""
+                                    >Member Last Name</label
+                                  ><input
+                                    name="lname"
+                                    id="lname"
+                                    type="text"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="dob" class="">DOB</label
+                                  ><input
+                                    name="dob"
+                                    id="dob"
+                                    type="date"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="number" class="">Number</label
+                                  ><input
+                                    name="number"
+                                    id="number"
+                                    type="number"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="gender" class="">Gender</label
+                                  ><input
+                                    name="gender"
+                                    id="gender"
+                                    type="text"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="maritialStatus" class=""
+                                    >Maritial Status</label
+                                  ><input
+                                    name="maritialStatus"
+                                    id="maritialStatus"
+                                    type="text"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="nationality" class=""
+                                    >Nationality</label
+                                  ><input
+                                    name="nationality"
+                                    id="nationality"
+                                    type="text"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="emirates" class="">Emirates</label
+                                  ><input
+                                    name="emirates"
+                                    id="emirates"
+                                    type="text"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="email" class=""
+                                    >Member Email</label
+                                  ><input
+                                    name="email"
+                                    id="email"
+                                    type="email"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                  <label for="email" class=""
+                                    >Confirm Email</label
+                                  ><input
+                                    name="email"
+                                    id="email"
+                                    type="email"
+                                    class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                          </form>
                         </div>
-                    </div>
-
-                    <div class="col-lg-9">
-                        <h3 class="text-xl text-primary text-center"> Policy Holder Information</h3>
-                      <div class="card-body">
-                        <form class="">
-                          <div class="form-row">
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="emiratesId" class="">Emirates
-                                  ID</label><input name="emiratesId" id="emiratesId" type="text" class="form-control">
+                        <h3 class="text-xl text-primary text-center">
+                          Policy Holder Information
+                        </h3>
+                        <div class="card-body">
+                          <form class="">
+                            <div class="form-row">
+                              <div class="col-md-12">
+                                <div class="position-relative form-group">
+                                  <label for="planType" class=""
+                                    >Plan Type & Fees to be collected</label
+                                  ><input
+                                    name="planType"
+                                    id="planType"
+                                    type="text"
+                                    class="form-control" />
+                                </div>
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="passport"
-                                  class="">Passport</label><input name="passport" id="passport" type="passport"
-                                  class="form-control">
+                            <div class="form-row">
+                              <div class="col-md-12">
+                                <div class="position-relative form-group">
+                                  <label for="paymnetMode" class=""
+                                    >Payment Mode</label
+                                  ><input
+                                    name="paymnetMode"
+                                    id="paymnetMode"
+                                    type="text"
+                                    class="form-control" />
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="fname" class="">Member First
-                                  Name</label><input name="fname" id="fname" type="text" class="form-control">
-                              </div>
+                            <div class="form-check">
+                              <input
+                                id="addBehaviorOnToastClick"
+                                type="checkbox"
+                                value="checked"
+                                class="form-check-input" />
+                              <label
+                                class="form-check-label"
+                                for="addBehaviorOnToastClick">
+                                I hereby confirm that I have got the details for
+                                the Policy Holder correct to the best of my
+                                ability and <br />
+                                ensured this is valid information for a real
+                                Member.
+                              </label>
                             </div>
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="lname" class="">Member Last
-                                  Name</label><input name="lname" id="lname" type="text" class="form-control">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="dob" class="">DOB</label><input
-                                  name="dob" id="dob" type="date" class="form-control">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="number"
-                                  class="">Number</label><input name="number" id="number" type="number"
-                                  class="form-control">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="gender"
-                                  class="">Gender</label><input name="gender" id="gender" type="text"
-                                  class="form-control">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="maritialStatus" class="">Maritial
-                                  Status</label><input name="maritialStatus" id="maritialStatus" type="text"
-                                  class="form-control">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="nationality"
-                                  class="">Nationality</label><input name="nationality" id="nationality" type="text"
-                                  class="form-control">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="emirates"
-                                  class="">Emirates</label><input name="emirates" id="emirates" type="text"
-                                  class="form-control">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="email" class="">Member
-                                  Email</label><input name="email" id="email" type="email" class="form-control">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="position-relative form-group"><label for="email" class="">Confirm
-                                  Email</label><input name="email" id="email" type="email" class="form-control">
-                              </div>
-                            </div>
-                          </div>
-                        </form>
+                            <button class="w-100 mt-3 btn btn-primary">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
                       </div>
-                        <h3 class="text-xl text-primary text-center">Policy Holder Information</h3>
-                      <div class="card-body">
-                        <form class="">
-                          <div class="form-row">
-                            <div class="col-md-12">
-                              <div class="position-relative form-group"><label for="planType" class="">Plan Type & Fees
-                                  to be collected</label><input name="planType" id="planType" type="text"
-                                  class="form-control">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="col-md-12">
-                              <div class="position-relative form-group"><label for="paymnetMode" class="">Payment
-                                  Mode</label><input name="paymnetMode" id="paymnetMode" type="text"
-                                  class="form-control">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-check">
-                            <input id="addBehaviorOnToastClick" type="checkbox" value="checked"
-                              class="form-check-input" />
-                            <label class="form-check-label" for="addBehaviorOnToastClick">
-                              I hereby confirm that I have got the details for the Policy Holder correct
-                              to the best of my ability and <br> ensured this is valid information for a real Member.
-                            </label>
-                          </div>
-                          <button class='w-100 mt-3 btn btn-primary'>Submit</button>
-                        </form>
-                      </div>
-                    </div>
-
-                  </section>
-                  <!-- ========================================================================================== -->
-                  <!-- ====================================== card body ========================================= -->
-                  <!-- ========================================================================================== -->
+                    </section>
+                    <!-- ========================================================================================== -->
+                    <!-- ====================================== card body ========================================= -->
+                    <!-- ========================================================================================== -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -190,13 +284,13 @@
         </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <img src="/assets/images/Dent_insurance_client.png" alt="dent insurance client logo" />
-    <p>Empowering innovative affordable solurions using technology</p>
-    <p>+9714 600546669</p>
-  </footer>
-  <script src="/assets/script.js"></script>
-</body>
-
+    <footer>
+      <img
+        src="/assets/images/Dent_insurance_client.png"
+        alt="dent insurance client logo" />
+      <p>Empowering innovative affordable solurions using technology</p>
+      <p>+9714 600546669</p>
+    </footer>
+    <script src="/assets/script.js"></script>
+  </body>
 </html>
