@@ -25278,3 +25278,6 @@ table th {
   background-color: #3EB3F9;
   color: #fff;
 }
+input[type=checkbox] {
+    transform: scale(1.3);
+}
